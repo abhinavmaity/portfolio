@@ -1,0 +1,120 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 263 60% 75%;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+
+    --accent: 240 3.7% 15.9%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 240 4.9% 83.9%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-inter;
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .section-container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24;
+  }
+  
+  .section-title {
+    @apply text-3xl md:text-4xl font-bold mb-8 text-portfolio-purple;
+  }
+  
+  .gradient-text {
+    @apply text-transparent bg-clip-text bg-gradient-to-r from-portfolio-purple to-portfolio-blue;
+  }
+  
+  .card-hover {
+    @apply transition-all duration-300 hover:shadow-lg hover:shadow-portfolio-purple/20 hover:-translate-y-1;
+  }
+  
+  .btn-primary {
+    @apply bg-portfolio-purple hover:bg-portfolio-dark-purple text-white font-semibold py-2 px-6 rounded-md transition-colors duration-200;
+  }
+  
+  .btn-outline {
+    @apply border border-portfolio-purple text-portfolio-purple hover:bg-portfolio-purple hover:text-white font-semibold py-2 px-6 rounded-md transition-colors duration-200;
+  }
+  
+  .glass-card {
+    @apply bg-white/10 backdrop-blur-md rounded-xl border border-white/20;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1A1F2C;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #9b87f5;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #7E69AB;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Background animation */
+.animated-gradient {
+  background: linear-gradient(-45deg, #9b87f5, #1EAEDB, #7E69AB, #33C3F0);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
