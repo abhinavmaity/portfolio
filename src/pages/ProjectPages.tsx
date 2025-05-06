@@ -35,10 +35,10 @@ export const ParkItPage = () => {
       "Used database transactions and proper indexing",
     ],
     challengeImages: [
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&h=400&q=80",
-      "https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=800&h=400&q=80",
+      "/ParkIt/Screenshot 2025-05-06 223931.png",
+      "/ParkIt/Screenshot 2025-05-06 223952.png",
       "https://images.unsplash.com/photo-1551650975-87deedd944c3?auto=format&fit=crop&w=800&h=400&q=80",
-      "https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=800&h=400&q=80",
+      "/ParkIt/Screenshot 2025-05-06 224050.png",
     ],
     github: "https://github.com/abhinavmaity/park-it-quickly",
     liveDemo: "https://park-it-umber.vercel.app/",
@@ -139,42 +139,43 @@ export const TaskManagerPage = () => {
 
 // Social Media Dashboard
 export const SocialDashboardPage = () => {
-  const projectData = {
-    title: "Social Media Dashboard",
-    description:
-      "Analytics dashboard for social media platforms with interactive charts and data visualization to track engagement metrics and audience growth.",
-    technologies: ["TypeScript", "Next.js", "Chart.js", "REST API"],
-    features: [
-      "Interactive data visualization",
-      "Multi-platform analytics",
-      "Custom report generation",
-      "Real-time metrics tracking",
-      "Audience insights and demographics",
-      "Export and sharing capabilities",
-    ],
-    challenges: [
-      "Processing and visualizing large volumes of social media data efficiently",
-      "Creating responsive and interactive charts that work across all devices",
-      "Implementing real-time data updates without performance degradation",
-      "Designing an intuitive dashboard that presents complex data clearly",
-    ],
-    solutions: [
-      "Implemented data aggregation and caching strategies with efficient API calls",
-      "Used Chart.js with custom responsive configurations and touch interactions",
-      "Set up WebSocket connections with fallback mechanisms and data buffering",
-      "Created a modular dashboard layout with collapsible sections and data filtering",
-    ],
-    challengeImages: [
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&h=400&q=80",
-      "https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=800&h=400&q=80",
-      "https://images.unsplash.com/photo-1551650975-87deedd944c3?auto=format&fit=crop&w=800&h=400&q=80",
-      "https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=800&h=400&q=80",
-    ],
-    github: "https://github.com/abhinavmaity/social-dashboard",
-    liveDemo: "https://social-dashboard-demo.vercel.app",
-    image:
-      "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&h=675&q=80",
-  };
+const projectData = {
+  title: "Web3 Crowdfunding Platform",
+  description:
+    "A decentralized crowdfunding platform built on Ethereum, allowing users to create campaigns, contribute using cryptocurrency, and track transactions transparently via blockchain.",
+  technologies: ["Solidity", "React.js", "Web3.js", "Ethereum", "MetaMask"],
+  features: [
+    "Campaign creation with funding goal, deadline, and description",
+    "Contributions using cryptocurrency (ETH)",
+    "Real-time transaction tracking on the blockchain",
+    "Refund mechanism for failed campaigns",
+    "MetaMask wallet integration for secure authentication",
+    "Campaign browsing with filters for categories, progress, and deadlines",
+    "Smart contract-driven fund management",
+    "Automatic refunds if the funding goal is not met",
+  ],
+  challenges: [
+    "Ensuring smooth MetaMask integration for authentication and transactions",
+    "Handling blockchain transaction delays and syncing with frontend",
+    "Creating a responsive UI for users across different devices",
+    "Implementing secure and scalable smart contracts to handle contributions and refunds",
+  ],
+  solutions: [
+    "Integrated Web3.js with React.js for seamless MetaMask interaction",
+    "Optimized smart contract calls to minimize transaction delays and ensure real-time updates",
+    "Designed a fully responsive frontend using React and Tailwind CSS",
+    "Developed robust smart contracts using Solidity, ensuring secure fund management and automated refunds",
+  ],
+  challengeImages: [
+    "https://cdn3.vectorstock.com/i/1000x1000/95/77/web-3-world-technology-digital-background-web3-vector-45479577.jpg",
+    "https://blog.ipleaders.in/wp-content/uploads/2021/06/smart-contract-featured-image-1.png",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgwm4LZvrOBl6Jme_bILUO5QMJGlie1vxalA&s",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTS07YVtpNNgjEYmx2eNz612eWhwprAp6e2xw&s",
+  ],
+  github: "https://github.com/abhinavmaity/crowdfunding",
+  liveDemo: "https://social-dashboard-demo.vercel.app",
+  image: "/crowdfunding.png",
+};
 
   return <ProjectDetails {...projectData} />;
 };
